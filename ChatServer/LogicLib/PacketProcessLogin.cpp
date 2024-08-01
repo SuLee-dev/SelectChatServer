@@ -46,9 +46,8 @@ namespace NLogicLib
 
 		NCommon::PktLobbyListRes resPkt;
 		
-		ERROR_CODE errorCode;
-		User* pUser;
-		std::tie(errorCode, pUser) = m_pRefUserMgr->GetUser(packetInfo.SessionIndex);
+		ERROR_CODE errorCode = std::get<0>(m_pRefUserMgr->GetUser(packetInfo.SessionIndex));
+		User* pUser = std::get<1>(m_pRefUserMgr->GetUser(packetInfo.SessionIndex));
 
 		if (errorCode != ERROR_CODE::NONE)
 		{
