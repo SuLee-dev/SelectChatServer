@@ -1,0 +1,5 @@
+﻿  TcpNetwork.cpp
+C:\Study\SelectChatServer\ChatServer\ServerNetLib\TcpNetwork.cpp(316,41): warning C4312: 'type cast': conversion from 'int' to 'char *' of greater size
+C:\Study\SelectChatServer\ChatServer\ServerNetLib\TcpNetwork.cpp(317,41): warning C4312: 'type cast': conversion from 'int' to 'char *' of greater size
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Study\SelectChatServer\ChatServer\x64\Debug\ServerNetLib.exe : fatal error LNK1120: 1 unresolved externals
