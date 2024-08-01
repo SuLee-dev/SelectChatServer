@@ -5,10 +5,16 @@
     <ClInclude Include="UserManager.h" />
     <ClInclude Include="Room.h" />
     <ClInclude Include="Lobby.h" />
+    <ClInclude Include="LobbyManager.h" />
+    <ClInclude Include="ConsoleLogger.h" />
+    <ClInclude Include="ConnectedUserManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="UserManager.cpp" />
     <ClCompile Include="Room.cpp" />
     <ClCompile Include="Lobby.cpp" />
+    <ClCompile Include="LobbyManager.cpp" />
+    <ClCompile Include="PacketProcess.h" />
+    <ClCompile Include="PacketProcess.cpp" />
   </ItemGroup>
 </Project>

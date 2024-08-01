@@ -3,7 +3,7 @@
 #include <wchar.h>
 
 #include "../ServerNetLib/ILog.h"
-#include "../ServerNetLib/ITcpNetwork.h"
+#include "../ServerNetLib/TcpNetwork.h"
 #include "../Common/Packet.h"
 #include "../Common/ErrorCode.h"
 
