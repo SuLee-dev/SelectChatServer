@@ -23,6 +23,7 @@
     <ClInclude Include="ConsoleLogger.h" />
     <ClInclude Include="Lobby.h" />
     <ClInclude Include="LobbyManager.h" />
+    <ClInclude Include="Main.h" />
     <ClInclude Include="Room.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="UserManager.h" />
@@ -30,6 +31,7 @@
   <ItemGroup>
     <ClCompile Include="Lobby.cpp" />
     <ClCompile Include="LobbyManager.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="PacketProcess.cpp" />
     <ClCompile Include="PacketProcess.h" />
     <ClCompile Include="PacketProcessLobby.cpp" />

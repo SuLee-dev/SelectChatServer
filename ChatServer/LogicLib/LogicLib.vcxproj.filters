@@ -8,6 +8,7 @@
     <ClInclude Include="LobbyManager.h" />
     <ClInclude Include="ConsoleLogger.h" />
     <ClInclude Include="ConnectedUserManager.h" />
+    <ClInclude Include="Main.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="UserManager.cpp" />
@@ -19,5 +20,6 @@
     <ClCompile Include="PacketProcessLogin.cpp" />
     <ClCompile Include="PacketProcessLobby.cpp" />
     <ClCompile Include="PacketProcessRoom.cpp" />
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
 </Project>
