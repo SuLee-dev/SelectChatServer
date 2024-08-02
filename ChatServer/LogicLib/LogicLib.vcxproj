@@ -32,7 +32,9 @@
     <ClCompile Include="LobbyManager.cpp" />
     <ClCompile Include="PacketProcess.cpp" />
     <ClCompile Include="PacketProcess.h" />
+    <ClCompile Include="PacketProcessLobby.cpp" />
     <ClCompile Include="PacketProcessLogin.cpp" />
+    <ClCompile Include="PacketProcessRoom.cpp" />
     <ClCompile Include="Room.cpp" />
     <ClCompile Include="UserManager.cpp" />
   </ItemGroup>

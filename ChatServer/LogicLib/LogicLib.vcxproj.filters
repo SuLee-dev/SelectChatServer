@@ -17,5 +17,7 @@
     <ClCompile Include="PacketProcess.h" />
     <ClCompile Include="PacketProcess.cpp" />
     <ClCompile Include="PacketProcessLogin.cpp" />
+    <ClCompile Include="PacketProcessLobby.cpp" />
+    <ClCompile Include="PacketProcessRoom.cpp" />
   </ItemGroup>
 </Project>
