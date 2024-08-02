@@ -51,7 +51,7 @@ namespace NLogicLib
 		short GetUserCount();
 
 
-		Room* CreateRoom();
+		Room* AllocRoom();
 
 		Room* GetRoom(const short roomIndex);
 

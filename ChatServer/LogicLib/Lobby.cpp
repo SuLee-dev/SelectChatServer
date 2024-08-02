@@ -144,7 +144,7 @@ namespace NLogicLib
 		}
 	}
 
-	Room* Lobby::CreateRoom()
+	Room* Lobby::AllocRoom()
 	{
 		for (int i = 0; i < (int)m_RoomList.size(); ++i)
 		{
