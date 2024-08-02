@@ -63,7 +63,7 @@ namespace NLogicLib
 				return;
 
 			auto curTime = std::chrono::system_clock::now();
-			auto diffTime = std::chrono::duration_cast<std::chrono::microseconds>(curTime - m_LatestLoginCheckTime);
+			auto diffTime = std::chrono::duration_cast<std::chrono::milliseconds>(curTime - m_LatestLoginCheckTime);
 
 			// 60 밀리 초마다 검사
 			if (diffTime.count() < 60) return;
