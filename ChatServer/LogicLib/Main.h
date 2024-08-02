@@ -16,7 +16,7 @@ namespace NServerNetLib
 namespace NLogicLib
 {
 	class UserManager;
-	class LobbbyManager;
+	class LobbyManager;
 	class PacketProcess;
 
 	class Main

@@ -1,5 +1,4 @@
 ﻿  TcpNetwork.cpp
-D:\Project\SelectChatServer\ChatServer\ServerNetLib\TcpNetwork.cpp(316,41): warning C4312: '형식 캐스트': 'int'에서 더 큰 'char *'(으)로의 변환입니다.
-D:\Project\SelectChatServer\ChatServer\ServerNetLib\TcpNetwork.cpp(317,41): warning C4312: '형식 캐스트': 'int'에서 더 큰 'char *'(으)로의 변환입니다.
-MSVCRTD.lib(exe_main.obj) : error LNK2019: main"int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
-D:\Project\SelectChatServer\ChatServer\x64\Debug\ServerNetLib.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
+C:\Study\SelectChatServer\ChatServer\ServerNetLib\TcpNetwork.cpp(317,41): warning C4312: 'type cast': conversion from 'int' to 'char *' of greater size
+C:\Study\SelectChatServer\ChatServer\ServerNetLib\TcpNetwork.cpp(318,41): warning C4312: 'type cast': conversion from 'int' to 'char *' of greater size
+  ServerNetLib.vcxproj -> C:\Study\SelectChatServer\ChatServer\x64\Debug\ServerNetLib.lib

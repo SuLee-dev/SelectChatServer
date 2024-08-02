@@ -27,8 +27,8 @@ namespace NLogicLib
 	class Room
 	{
 	public:
-		Room() {}
-		virtual ~Room() {}
+		Room();
+		virtual ~Room();
 
 		void Init(const short index, const short maxUserCount);
 

@@ -32,8 +32,8 @@ namespace NLogicLib
 	class Lobby
 	{
 	public:
-		Lobby() {}
-		virtual ~Lobby() {}
+		Lobby();
+		virtual ~Lobby();
 
 		void Init(const short lobbyIndex, const short maxLobbyUserCount
 			, const short maxRoomCountByLobby, const short maxRoomUserCount);

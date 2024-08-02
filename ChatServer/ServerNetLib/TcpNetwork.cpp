@@ -224,11 +224,12 @@ namespace NServerNetLib
 	NET_ERROR_CODE TcpNetwork::BindListen(short port, int backlogCount)
 	{
 		SOCKADDR_IN server_addr;
-		server_addr.sin_family = PF_INET;
+		memset(&server_addr, 0, sizeof(server_addr));
+		server_addr.sin_family = AF_INET;
 		server_addr.sin_addr.s_addr = htonl(INADDR_ANY);
 		server_addr.sin_port = htons(port);
 
-		if (bind(m_ServerSockFD, (SOCKADDR*)&server_addr, sizeof(server_addr) == SOCKET_ERROR))
+		if (bind(m_ServerSockFD, (SOCKADDR*)&server_addr, sizeof(server_addr)) == SOCKET_ERROR)
 			return NET_ERROR_CODE::SERVER_SOCKET_BIND_FAIL;
 
 		NET_ERROR_CODE netError = SetNonBlockSocket(m_ServerSockFD);

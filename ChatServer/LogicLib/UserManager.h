@@ -19,8 +19,8 @@ namespace NLogicLib
 	class UserManager
 	{
 	public:
-		UserManager() {}
-		virtual ~UserManager() {}
+		UserManager();
+		virtual ~UserManager();
 
 		void Init(const int maxUserCount);
 
