@@ -206,8 +206,8 @@ namespace NServerNetLib
 	NET_ERROR_CODE TcpNetwork::InitServerSocket()
 	{
 		WSADATA wsaData;
-		WORD wVersionRequeted = MAKEWORD(2, 2);
-		WSAStartup(wVersionRequeted, &wsaData);
+		WORD wVersionRequested = MAKEWORD(2, 2);
+		WSAStartup(wVersionRequested, &wsaData);
 
 		m_ServerSockFD = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP);
 		if (m_ServerSockFD == INVALID_SOCKET)
