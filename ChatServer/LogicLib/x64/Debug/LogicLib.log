@@ -1,5 +1,13 @@
-﻿  PacketProcess.cpp
+﻿  Lobby.cpp
+  LobbyManager.cpp
+  Main.cpp
+  PacketProcess.cpp
+  PacketProcess.h
+  PacketProcessLobby.cpp
   PacketProcessLogin.cpp
+  PacketProcessRoom.cpp
+  Room.cpp
+  UserManager.cpp
   Generating Code...
 x64\Debug\PacketProcess.obj : warning LNK4042: object specified more than once; extras ignored
   LogicLib.vcxproj -> C:\Study\SelectChatServer\ChatServer\x64\Debug\LogicLib.lib
