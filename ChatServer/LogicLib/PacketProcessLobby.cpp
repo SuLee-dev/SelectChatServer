@@ -18,8 +18,7 @@ namespace NLogicLib
 		auto reqPkt = (NCommon::PktLobbyEnterReq*)packetInfo.pRefData;
 		NCommon::PktLobbyEnterRes resPkt;
 
-		auto errorCode = std::get<0>(m_pRefUserMgr->GetUser(packetInfo.SessionIndex));
-		auto pUser = std::get<1>(m_pRefUserMgr->GetUser(packetInfo.SessionIndex));
+		auto [errorCode, pUser] = m_pRefUserMgr->GetUser(packetInfo.SessionIndex);
 
 		if (errorCode != ERROR_CODE::NONE)
 		{
@@ -61,8 +60,7 @@ namespace NLogicLib
 	{
 		NCommon::PktLobbyLeaveRes resPkt;
 		
-		auto errorCode = std::get<0>(m_pRefUserMgr->GetUser(packetInfo.SessionIndex));
-		auto pUser = std::get<1>(m_pRefUserMgr->GetUser(packetInfo.SessionIndex));
+		auto [errorCode, pUser] = m_pRefUserMgr->GetUser(packetInfo.SessionIndex);
 
 		if (errorCode != ERROR_CODE::NONE)
 		{

@@ -19,8 +19,7 @@ namespace NLogicLib
 		auto reqPkt = (NCommon::PktRoomEnterReq*)packetInfo.pRefData;
 		NCommon::PktRoomEnterRes resPkt;
 
-		auto errorCode = std::get<0>(m_pRefUserMgr->GetUser(packetInfo.SessionIndex));
-		auto pUser = std::get<1>(m_pRefUserMgr->GetUser(packetInfo.SessionIndex));
+		auto [errorCode, pUser] = m_pRefUserMgr->GetUser(packetInfo.SessionIndex);
 
 		if (errorCode != ERROR_CODE::NONE)
 		{
@@ -99,8 +98,7 @@ namespace NLogicLib
 	ERROR_CODE PacketProcess::RoomLeave(PacketInfo packetInfo)
 	{
 		NCommon::PktRoomLeaveRes resPkt;
-		auto errorCode = std::get<0>(m_pRefUserMgr->GetUser(packetInfo.SessionIndex));
-		auto pUser = std::get<1>(m_pRefUserMgr->GetUser(packetInfo.SessionIndex));
+		auto [errorCode, pUser] = m_pRefUserMgr->GetUser(packetInfo.SessionIndex);
 
 		if (errorCode != ERROR_CODE::NONE)
 		{
@@ -157,8 +155,7 @@ namespace NLogicLib
 		auto reqPkt = (NCommon::PktRoomChatReq*)packetInfo.pRefData;
 		NCommon::PktRoomChatRes resPkt;
 
-		auto errorCode = std::get<0>(m_pRefUserMgr->GetUser(packetInfo.SessionIndex));
-		auto pUser = std::get<1>(m_pRefUserMgr->GetUser(packetInfo.SessionIndex));
+		auto [errorCode, pUser] = m_pRefUserMgr->GetUser(packetInfo.SessionIndex);
 
 		if (errorCode != ERROR_CODE::NONE)
 		{
